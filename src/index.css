@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  height: 100%;
+}
+
+.triangle {
+  border-color: yellow transparent transparent #171939;
+  border-style: solid;
+  border-width: 0px 50px 50px 25px;
+  height: 0px;
+  width: 0px;
+}
