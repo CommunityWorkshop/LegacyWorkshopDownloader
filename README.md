@@ -1,8 +1,8 @@
 # Community-workshop-downloader
 
-[![Required Node.JS >= v14.17.0](https://img.shields.io/static/v1?label=node&message=%3E=14.17.0&logo=node.js&color=3f893e&style=flat)](https://nodejs.org/about/releases)
+Desktop app to download anonymously allowed workshop items.
 
-English
+# The below is guide of template of electron.js which is used to build this project
 
 ## Overview
 
