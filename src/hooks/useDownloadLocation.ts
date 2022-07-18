@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const useDownloadLocation = () => {
   // * States
-  const [downloadLocation, setDownloadLocation] = useState("");
+  const [downloadLocation, setDownloadLocation] = useState(" ");
 
   // * Effects
   useEffect(() => {
