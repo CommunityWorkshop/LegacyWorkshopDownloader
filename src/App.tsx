@@ -10,7 +10,7 @@ function App() {
   useNavigation();
 
   return (
-    <div className="flex flex-col w-screen bg-primary-dark h-screen">
+    <div className="flex h-screen w-screen flex-col bg-primary-dark">
       <TopBar />
       <Routes>
         <Route path="/" element={<Home />} />

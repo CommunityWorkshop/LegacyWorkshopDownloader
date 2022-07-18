@@ -3,6 +3,7 @@ import { release } from "os";
 import { join } from "path";
 import { autoExtractValueIPC } from "./ipcs/autoExtract";
 import { downloadLocations } from "./ipcs/downloadLocations";
+import { listenWindowEvents } from "./ipcs/listenWindowEvents";
 import startServer from "./server";
 import { initializeStore } from "./store/initializeStore.";
 import moveWindow from "./utils/moveWindow";
@@ -19,7 +20,7 @@ if (!app.requestSingleInstanceLock()) {
 }
 process.env["ELECTRON_DISABLE_SECURITY_WARNINGS"] = "true";
 
-let win: BrowserWindow | null = null;
+export let win: BrowserWindow | null = null;
 // Here you can add more preload scripts
 const splash = join(__dirname, "../preload/splash.js");
 // 🚧 Use ['ENV_NAME'] to avoid vite:define plugin
@@ -29,6 +30,7 @@ async function createWindow() {
   win = new BrowserWindow({
     title: "Steam workshop downloader",
     autoHideMenuBar: true,
+    titleBarStyle: "hidden",
     webPreferences: {
       preload: splash,
       nodeIntegration: true,
@@ -93,3 +95,6 @@ downloadLocations();
 
 // listen for auto extract value
 autoExtractValueIPC();
+
+// listen window actions
+listenWindowEvents();

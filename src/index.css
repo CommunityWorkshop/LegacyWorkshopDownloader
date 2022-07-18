@@ -16,3 +16,12 @@ html {
   height: 0px;
   width: 0px;
 }
+
+.drag {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+.nodrag {
+  -webkit-app-region: no-drag;
+}
