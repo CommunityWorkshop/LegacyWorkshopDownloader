@@ -3,7 +3,7 @@
  */
 {
   appId: "com.community.steamworkshopdownloader",
-  productName: "Community Workshop Downloader",
+  productName: "CWD - Community Workshop Downloader",
   copyright: "Copyright © 2022 ${author}",
   asar: true,
   directories: {
