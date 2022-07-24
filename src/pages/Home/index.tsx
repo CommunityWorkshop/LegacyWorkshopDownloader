@@ -1,6 +1,10 @@
+import Button from "@/components/Button";
 import getItemIdFromURL from "@/utils/getItemIdFromUrl";
+import { Games20Regular } from "@fluentui/react-icons";
+import { ipcRenderer } from "electron";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router";
 
 const Home = () => {
   // * States
@@ -8,6 +12,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
 
   // * Hooks
+  const navigate = useNavigate();
 
   // * Functions
   const handleDownload = async () => {
@@ -32,6 +37,10 @@ const Home = () => {
       toast.error("Please enter a valid URL!");
     }
     setLoading(false);
+  };
+
+  const handleOpenSupportedGames = () => {
+    ipcRenderer.invoke("openLink", "https://steamdb.info/sub/17906/apps/");
   };
 
   return (
@@ -60,9 +69,16 @@ const Home = () => {
         </div>
       )}
       <div className="flex flex-col flex-1 w-full">
+        <div className="w-full mt-4 pr-4 flex items-end justify-end">
+          <Button
+            onClick={handleOpenSupportedGames}
+            text="Supported games"
+            icon={<Games20Regular className="mr-1" />}
+          />
+        </div>
         <div className="flex-1 pb-10   flex flex-col items-center justify-center">
           <div className="font-medium mb-2 text-white text-3xl">
-            Enter your workshop item url
+            Enter workshop item url
           </div>
           <input
             value={itemURL}

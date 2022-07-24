@@ -1,6 +1,7 @@
 import { app, BrowserWindow, shell } from "electron";
 import { release } from "os";
 import { join } from "path";
+import { mainIPCs } from "./ipcs";
 import { autoExtractValueIPC } from "./ipcs/autoExtract";
 import { downloadLocations } from "./ipcs/downloadLocations";
 import { listenWindowEvents } from "./ipcs/listenWindowEvents";
@@ -98,3 +99,6 @@ autoExtractValueIPC();
 
 // listen window actions
 listenWindowEvents();
+
+// listen other ipcs
+mainIPCs();

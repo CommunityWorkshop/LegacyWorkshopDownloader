@@ -4,6 +4,7 @@ import TopBar from "./components/TopBar";
 import useNavigation from "./hooks/useNavigation";
 import Home from "./pages/Home";
 import Settings from "./pages/Settings";
+import SupportedGames from "./pages/SupportedGames";
 
 function App() {
   // * Hooks
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/supported-games" element={<SupportedGames />} />
       </Routes>
     </div>
   );
