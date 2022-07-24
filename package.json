@@ -2,7 +2,7 @@
   "name": "electron-vite-react",
   "productName": "Electron",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Vite React Electron boilerplate.",
   "author": "swd",
   "license": "MIT",
