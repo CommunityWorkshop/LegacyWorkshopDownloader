@@ -1,6 +1,8 @@
 import Button from "@/components/Button";
+import useDownloadStatus from "@/hooks/useDownloadStatus";
 import getItemIdFromURL from "@/utils/getItemIdFromUrl";
 import { Games20Regular, Money20Regular } from "@fluentui/react-icons";
+import axios from "axios/dist/axios";
 import { ipcRenderer } from "electron";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -10,9 +12,11 @@ const Home = () => {
   // * States
   const [itemURL, setItemURL] = useState("");
   const [loading, setLoading] = useState(false);
+  const [isCancellingDownload, setIsCancellingDownload] = useState(false);
 
   // * Hooks
   const navigate = useNavigate();
+  const status = useDownloadStatus(loading);
 
   // * Functions
   const handleDownload = async () => {
@@ -21,17 +25,32 @@ const Home = () => {
       const id = getItemIdFromURL(itemURL);
       if (id) {
         try {
-          const res = await fetch(`http://localhost:2550/download/${id}`);
-          console.log(res.ok);
-          if (res.ok) {
-            console.log(res);
-            toast.success("File downloaded successfully");
-          } else {
-            toast.error("Something went wrong!");
+          const res = await axios.get(`http://localhost:2550/download/${id}`);
+          console.log(res.status);
+          // Only handle this stuff if is cancelling is false
+          // if is cancelling is true, it means
+          // no need to show them what happened with download
+          if (!isCancellingDownload) {
+            if (res.status === 200) {
+              console.log(res);
+              toast.success("File downloaded successfully");
+            } else {
+              toast.error("Something went wrong!");
+            }
           }
-        } catch (error) {
-          toast.error("Error!");
+        } catch (error: any) {
+          // Only handle this stuff if is cancelling is false
+          // if is cancelling is true, it means
+          // no need to show them what happened with download
+          if (!isCancellingDownload) {
+            if (typeof error.response.data === "string") {
+              toast.error(error.response.data);
+            } else {
+              toast.error("Error.");
+            }
+          }
         }
+        setIsCancellingDownload(false);
       }
     } else {
       toast.error("Please enter a valid URL!");
@@ -46,6 +65,19 @@ const Home = () => {
     );
   };
 
+  const handleCancelDownload = async () => {
+    setIsCancellingDownload(true);
+    const res = await axios.post("http://localhost:2550/cancel-download", {
+      itemId: getItemIdFromURL(itemURL),
+    });
+    if (res.status === 200) {
+      toast.success("Download cancelled");
+      setLoading(false);
+    } else {
+      toast.error("Unable to stop download");
+    }
+  };
+
   const handleOpenSupportedGames = () => {
     ipcRenderer.invoke("openLink", "https://steamdb.info/sub/17906/apps/");
   };
@@ -53,11 +85,11 @@ const Home = () => {
   return (
     <div className="flex-1 flex items-center flex-col justify-center">
       {loading && (
-        <div className="absolute w-screen top-0 z-50 text-white h-screen shadow-lg backdrop-blur-3xl items-center justify-center flex">
-          <div className="flex flex-row items-center justify-center">
+        <div className="absolute drag flex-col w-screen top-0 z-50 text-white h-screen shadow-lg backdrop-blur-3xl items-center justify-center flex">
+          <div className="flex  flex-row items-center justify-center">
             <svg
               role="status"
-              className="w-8 h-8 mr-2 text-primary-light animate-spin dark:text-gray-600 fill-indigo-600"
+              className="w-8 h-8 mr-2 text-white text-opacity-20 animate-spin dark:text-gray-600 fill-blue-500"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -71,8 +103,14 @@ const Home = () => {
                 fill="currentFill"
               />
             </svg>
-            <h3 className="ml-2"> Downloading...</h3>
+            <h3 className="ml-2">{status}</h3>
           </div>
+
+          <Button
+            className="mt-4 nodrag"
+            text={"Cancel"}
+            onClick={handleCancelDownload}
+          />
         </div>
       )}
       <div className="flex flex-col flex-1 w-full">
@@ -83,7 +121,7 @@ const Home = () => {
             icon={<Games20Regular className="mr-1" />}
           />
           <Button
-            className="ml-3 "
+            className="ml-3"
             onClick={handleOpenKofi}
             text="Donate"
             icon={<Money20Regular className="mr-1" />}
@@ -96,7 +134,8 @@ const Home = () => {
           <input
             value={itemURL}
             onChange={(e) => setItemURL(e.target.value)}
-            className="outline-none bg-white bg-opacity-10 max-w-xl w-full mt-5 text-white focus:shadow-lg transition-all rounded-full px-6 py-2"
+            className="outline-none border-t-2 border-white border-opacity-10 bg-white bg-opacity-10 max-w-xl w-full mt-5
+            text-white focus:shadow-lg transition-all rounded-full px-6 py-2"
             placeholder="URL"
           />
           <button
