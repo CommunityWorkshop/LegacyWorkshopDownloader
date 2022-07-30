@@ -7,6 +7,7 @@
 [![Downloads](https://img.shields.io/github/downloads/Community-Workshop-Downloader/CommunityWorkshopMain/total?label=Downloads&logo=GitHub&style=flat-square)](https://github.com/Community-Workshop-Downloader/CommunityWorkshopMain/releases)
 ![Update](https://img.shields.io/github/last-commit/Community-Workshop-Downloader/CommunityWorkshopMain?label=Latest%20Update&style=flat-square)
 ![Version](https://img.shields.io/github/v/tag/Community-Workshop-Downloader/CommunityWorkshopMain?label=Version&style=flat-square)
+![GitHub Size](https://img.shields.io/github/repo-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Project%20Size&style=flat-square)
 # Steam Workshop Downloader
 
 A brief description of what this project does and who it's for
