@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import getItemIdFromURL from "@/utils/getItemIdFromUrl";
-import { Games20Regular } from "@fluentui/react-icons";
+import { Games20Regular, Money20Regular } from "@fluentui/react-icons";
 import { ipcRenderer } from "electron";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -39,6 +39,13 @@ const Home = () => {
     setLoading(false);
   };
 
+  const handleOpenKofi = () => {
+    ipcRenderer.invoke(
+      "openLink",
+      "https://ko-fi.com/communityworkshopdownloader"
+    );
+  };
+
   const handleOpenSupportedGames = () => {
     ipcRenderer.invoke("openLink", "https://steamdb.info/sub/17906/apps/");
   };
@@ -74,6 +81,12 @@ const Home = () => {
             onClick={handleOpenSupportedGames}
             text="Supported games"
             icon={<Games20Regular className="mr-1" />}
+          />
+          <Button
+            className="ml-3 "
+            onClick={handleOpenKofi}
+            text="Donate"
+            icon={<Money20Regular className="mr-1" />}
           />
         </div>
         <div className="flex-1 pb-10   flex flex-col items-center justify-center">
