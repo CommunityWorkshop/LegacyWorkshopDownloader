@@ -16,9 +16,13 @@ const Home = () => {
 
   // * Hooks
   const navigate = useNavigate();
-  const status = useDownloadStatus(loading);
+  const { status, method } = useDownloadStatus(loading);
 
   // * Functions
+  const handleOpenGGNTW = () => {
+    ipcRenderer.invoke("openLink", "https://ggntw.com/");
+  };
+
   const handleDownload = async () => {
     setLoading(true);
     if (itemURL) {
@@ -105,7 +109,17 @@ const Home = () => {
             </svg>
             <h3 className="ml-2">{status}</h3>
           </div>
-
+          {method === "GGNTW" && (
+            <div className="bg-black flex flex-row nodrag text-xs py-1 px-3 mt-4 bg-opacity-30 rounded-md">
+              Downloading from{" "}
+              <h3
+                className="ml-1 cursor-pointer text-blue-400 underline"
+                onClick={handleOpenGGNTW}
+              >
+                ggntw.com
+              </h3>
+            </div>
+          )}
           <Button
             className="mt-4 nodrag"
             text={"Cancel"}

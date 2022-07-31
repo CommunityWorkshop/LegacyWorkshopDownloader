@@ -1,9 +1,8 @@
 import axios from "axios";
-import { ggntwCdnUrl } from "../../constants";
 import { handleResponseStatus } from "./handleResponseStatus";
 
 export const downloadFromGGNTW = async (itemId: string, appId: string) => {
-  console.log("downloading from ggntw");
+  console.log("downloading from gg network🗼");
   try {
     // Sending post request to steamSearch.php to initiate download
     const res = await axios.post(
@@ -13,6 +12,7 @@ export const downloadFromGGNTW = async (itemId: string, appId: string) => {
       }
     );
     try {
+      const ggntwCdnUrl = `https://${res.data.server}-cdn.ggntw.com`;
       // if status is 1, then file is available to download
       // other wise keep waiting for status to be 1
       let downloadFilePath = await handleResponseStatus(

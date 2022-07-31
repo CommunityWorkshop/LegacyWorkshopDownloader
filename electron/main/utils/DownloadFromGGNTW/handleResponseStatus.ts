@@ -12,7 +12,7 @@ export const handleResponseStatus = async (
   if (!isDownloading) {
     throw new Error("Downloading stopped..");
   }
-  console.log(status);
+  console.log("ggnetwork status 😀", status);
   switch (status) {
     case "0":
       GGNTWdownloadStatus = "Starting...";
@@ -24,7 +24,7 @@ export const handleResponseStatus = async (
         const filePath = await downloadFromURL(downloadUrl);
         return filePath;
       } catch (error) {
-        throw new Error("Unable to download file");
+        throw new Error(error.message);
       }
     case "2":
       GGNTWdownloadStatus = "Fetching file from steam server";

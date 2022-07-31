@@ -1,21 +1,35 @@
+import IconButton from "@/components/IconButton";
 import useAutoExtract from "@/hooks/useAutoExtract";
 import useDownloadLocation from "@/hooks/useDownloadLocation";
+import { ipcRenderer } from "electron";
 
 const Settings = () => {
   // * Hooks
   const { downloadLocation, selectFolder } = useDownloadLocation();
   const { autoExtractEnabled, changeAutoExtract } = useAutoExtract();
 
+  // * Functions
+  const handleOpenDownloadFolder = () => {
+    ipcRenderer.invoke("openDownloadFolder");
+  };
+
   return (
     <div className="sm:max-w-lg flex-col lg:max-w-2xl xl:max-w-4xl self-center py-5 flex w-full">
-      <div className="w-full">
+      <div className="flex flex-col flex-1">
         <h3 className="text-white">Download location</h3>
-        <button
-          onClick={selectFolder}
-          className="bg-white hover:bg-opacity-10 mt-2 w-full flex items-start rounded-md bg-opacity-5 py-2 px-5"
-        >
-          <h1 className="text-white font-light">{downloadLocation}</h1>
-        </button>
+        <div className="w-full flex mt-2 flex-row items-center justify-center">
+          <button
+            onClick={selectFolder}
+            className="bg-white hover:bg-opacity-10 w-full flex items-start rounded-md bg-opacity-5 py-2 px-5"
+          >
+            <h1 className="text-white font-light">{downloadLocation}</h1>
+          </button>
+          <IconButton
+            className="ml-2"
+            icon={"fluent:open-16-regular"}
+            onClick={handleOpenDownloadFolder}
+          />
+        </div>
       </div>
       <div className="w-full mt-5">
         <div className="form-check">

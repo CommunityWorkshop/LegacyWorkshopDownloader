@@ -30,6 +30,8 @@
   },
   "devDependencies": {
     "@fluentui/react-icons": "^2.0.175",
+    "@iconify/icons-fluent": "^1.2.15",
+    "@iconify/react": "^3.2.2",
     "@types/archiver": "^5.3.1",
     "@types/axios": "^0.14.0",
     "@types/node": "^18.0.0",

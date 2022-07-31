@@ -98,12 +98,12 @@ export default function startServer() {
   app.get("/status", async (_req, res) => {
     if (isDownloading) {
       if (downloadMethod == DownloadMethod.GGNTW) {
-        res.status(200).send(GGNTWdownloadStatus);
+        res.status(200).send({ method: "GGNTW", status: GGNTWdownloadStatus });
       } else {
-        res.status(200).send("Downloading...");
+        res.status(200).send({ method: "DD", status: "Downloading..." });
       }
     } else {
-      res.status(200).send("Not downloading");
+      res.status(200).send({ status: "Downloading..." });
     }
   });
 
