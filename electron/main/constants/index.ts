@@ -39,10 +39,6 @@ export const ggntwGames = [
     appId: "647960",
   },
   {
-    gameName: "Caves of Qud",
-    appId: "333640",
-  },
-  {
     gameName: "Hydroneer",
     appId: "1106840",
   },
