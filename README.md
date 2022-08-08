@@ -4,7 +4,7 @@
 [![Licence](https://img.shields.io/github/license/Community-Workshop-Downloader/CommunityWorkshopMain?color=%23A42E2B&label=Licence&logo=GNU&style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Downloads](https://img.shields.io/github/downloads/Community-Workshop-Downloader/CommunityWorkshopMain/total?label=Downloads&logo=GitHub&style=flat-square)](https://github.com/Community-Workshop-Downloader/CommunityWorkshopMain/releases)
 [![Donate Ko-Fi](https://img.shields.io/badge/Donate-Ko--Fi-FF5E5B?style=flat-square&logo=Ko-fi)](https://ko-fi.com/communityworkshopdownloader)
-![GitHub Size](https://img.shields.io/github/repo-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Repository%20Size&style=flat-square&logo=Windows%20Terminal&logoColor=white)
+![GitHub Size](https://img.shields.io/github/repo-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Repository%20Size&style=flat-square&logo=Hyper&logoColor=white)
 ![GitHub Program](https://img.shields.io/github/languages/code-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Project%20Size&style=flat-square&logo=DocuSign&logoColor=white)
 ![Update](https://img.shields.io/github/last-commit/Community-Workshop-Downloader/CommunityWorkshopMain?label=Latest%20Update&style=flat-square)
 ![Version](https://img.shields.io/github/v/tag/Community-Workshop-Downloader/CommunityWorkshopMain?label=Version&style=flat-square&color=lightgrey)
@@ -30,7 +30,57 @@ text
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
-### Game Support List
+### Game Support List 
+🆓✅ Everything on https://steamdb.info/sub/17906/apps/ \
+🆓✅ Action Sandbox\
+🆓✅ TearDown\
+🆓✅ Brick Rigs\
+🆓✅ Ravenfield\
+🆓✅ Project Zomboid\
+🆓✅ RimWorld\
+🆓✅ Caves of Qud\
+🆕✅ Kenshi\
+🆕✅ People Playground\
+🆕⚠️ Age of Wonders: Planetfall\
+🆓⚠️ Black Mesa\
+🆕⚠️ City Game Studio\
+🆕⚠️ Conan Exiles\
+🆕⚠️ Dustwind\
+🆓⚠️ Day of Infamy\
+🆕⚠️ Empire of Sin\
+🆕⚠️ EndCycle VS\
+🆕⚠️ Gloomhaven\
+🆓⚠️ Garry's Mod\
+🆕⚠️ Haydee 2\
+🆓⚠️ Hydroneer\
+🆕⚠️ KeeperRL\
+🆕⚠️ Lumencraft\
+🆕⚠️ Miscreated\
+🆕⚠️ Parkitect\
+🆕⚠️ Post Scriptum\
+🆕⚠️ rFactor 2\
+🆓⚠️ Rusted Warfare\
+🆓⚠️ Stormworks: Build and Rescue\
+🆓⚠️ Stellaris\
+🆕⚠️ Serious Sam 4\
+🆕⚠️ Serious Sam: Siberian Mayhem\
+🆕⚠️ Space Engineers\
+🆕⚠️ SpellForce 3: Fallen God\
+🆕⚠️ Squad\
+🆕⚠️ Stationeers\
+🆕⚠️ The Hand of Merlin\
+🆕⚠️ The Talos Principle\
+🆕⚠️ They Are Billions\
+🆕⚠️ Thunder Tier One\
+🆕⚠️ Transport Fever\
+🆕⚠️ Transport Fever 2\
+🆓⚠️ Unturned\
+🆕⚠️ Warhammer 40,000: Gladius - Relics of War\
+🆕⚠️ WARNO\
+🆕⚠️ WE ARE FOOTBALL\
+🆕⚠️ Wreckfest
+
+**Last Updated 08/08/2022**
 ### FAQ
 
 #### Question 1
