@@ -7,8 +7,6 @@
 ![Update](https://img.shields.io/github/last-commit/Community-Workshop-Downloader/CommunityWorkshopMain?label=Latest%20Update&style=flat-square)
 ![Version](https://img.shields.io/github/v/tag/Community-Workshop-Downloader/CommunityWorkshopMain?label=Version&style=flat-square&color=lightgrey)
 ![GitHub Size](https://img.shields.io/github/repo-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Project%20Size&style=flat-square)
-
-
 [![Windows](https://img.shields.io/badge/-Windows-%230078D6?style=flat-square&logo=Windows)](https://www.microsoft.com/en-gb/software-download/windows10)
 # Steam Workshop Downloader
 
