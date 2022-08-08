@@ -50,6 +50,7 @@ Answer 2
 #### Workshop Downloader v0.2.5a
 📝 Minor UI changes
 #### Workshop Downloader v0.3.0a
+🆕  Added support for all the games in https://ggntw.com/steam \
 🆕 Added support for Action Sandbox\
 🆕 Added support for TearDown\
 🆕 Added support for Brick Rigs\
