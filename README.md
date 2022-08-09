@@ -1,3 +1,4 @@
+
 ![CWD_Logo-Wide.png](https://iili.io/UNMUBa.png)
 
 [![Discord](https://img.shields.io/discord/980492607778091058?color=%235865F2&label=Discord&logo=Discord&style=flat-square)](https://discord.com/invite/TrxaNYb2Vv)
@@ -10,7 +11,6 @@
 ![Version](https://img.shields.io/github/v/tag/Community-Workshop-Downloader/CommunityWorkshopMain?label=Version&style=flat-square&color=lightgrey)
 [![Windows](https://img.shields.io/badge/-Windows-%230078D6?style=flat-square&logo=Windows)](https://www.microsoft.com/en-gb/software-download/windows10)
 # Steam Workshop Downloader
-
 A brief description of what this project does and who it's for
 
 
@@ -26,7 +26,6 @@ text
 ```
     
 ### Screenshots
-
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
@@ -82,13 +81,10 @@ text
 
 **Last Updated 08/08/2022**
 ### FAQ
-
 #### Question 1
-
 Answer 1
 
 #### Question 2
-
 Answer 2
 
 
@@ -100,7 +96,7 @@ Answer 2
 #### Workshop Downloader v0.2.5a
 📝 Minor UI changes
 #### Workshop Downloader v0.3.0a
-🆕  Added support for all the games in https://ggntw.com/steam \
+🆕 Added support for all the games in https://ggntw.com/steam \
 🆕 Added support for Action Sandbox\
 🆕 Added support for TearDown\
 🆕 Added support for Brick Rigs\
@@ -125,7 +121,30 @@ Answer 2
 
 
 ### Authors
+Made with 💖 by: [Snkt01](https://github.com/snkt01), [SlejmUr](https://github.com/SlejmUr), [GamingNerdLeith2022](https://github.com/GamingNerdLeith2020)
+& [The Community Workshop on Discord](https://discord.com/invite/TrxaNYb2Vv)
 
-#### [Snkt01](https://github.com/snkt01), [SlejmUr](https://github.com/SlejmUr), [GamingNerdLeith2022](https://github.com/GamingNerdLeith2020)
 ### Acknowledgements
-#### [GGNetwork](https://ggntw.com/steam), [Depot Downloader](https://github.com/SteamRE/DepotDownloader), [electron-vite-react](https://github.com/electron-vite/electron-vite-react), [readme.so](https://readme.so/), [shields.io](https://shields.io/)
+Thanks for these awesome resources that were used during the development of the Community Workshop Downloader:
+
+[GGNetwork - Allowing us to use their API to support more games](https://ggntw.com/steam)\
+[Depot Downloader - ???](https://github.com/SteamRE/DepotDownloader)\
+[Electron-vite-react - ???](https://github.com/electron-vite/electron-vite-react)\
+[Readme.so/editor - Making Readme files less obtrusive](https://readme.so/)\
+[Shields.io - Adding small badges (shields) on the repository](https://shields.io/)\
+[SteamWorkshopDownloader.io - Rest In Peace](https://steamworkshopdownloader.io/)\
+[SteamDB - Giving us valuable information](https://steamdb.info/sub/17906/apps/)\
+[SteamCMD - Allowing us to download mods from the workshop](https://developer.valvesoftware.com/wiki/SteamCMD)\
+[SteamCMD.net API - Metadata from SteamDB and SteamCMD](https://www.steamcmd.net/)\
+[Emojipedia - Giving us emojis](https://emojipedia.org/)\
+[r/swd_io - Initial Insperation for Community Workshop Downloader](https://www.reddit.com/r/swd_io/)\
+[Readmine - Template for the CommunityWorkshop's README](https://github.com/mhucka/readmine)\
+[Freeimage.host - Hosting all of the images](https://freeimage.host/)\
+[Simple Icons - Giving us a massive libary of company logos](https://simpleicons.org/)\
+[]()\
+[]()
+### Related
+
+Here are some related projects\
+[Awesome README](https://github.com/matiassingers/awesome-readme)
+
