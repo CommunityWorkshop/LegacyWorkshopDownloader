@@ -10,6 +10,7 @@ import getRatingURL from './getRatings'
 import getRequiredItems from './getRequiredItems'
 import getSizeInBytes from './getSizeInBytes'
 import getTags from './getTags'
+import getThumbnail from './getThumbnail'
 import getUpdatedOn from './getUpdatedOn'
 import { GetVotes } from './getVotes'
 
@@ -45,6 +46,7 @@ export default async function getItemDetails(
   include('UpdatedOn') &&
     (itemDetails.updatedOn = getUpdatedOn(page, isCollection))
   include('votes') && (itemDetails.votes = GetVotes(page))
+  include('thumbnail') && (itemDetails.thumbnail = getThumbnail(page))
 
   return itemDetails
 }
