@@ -49,7 +49,7 @@ const TopBar = () => {
         style={{
           marginLeft: -75,
         }}
-        className="flex-1  flex flex-row w-full pl-10 bg-primary-default"
+        className="flex-1 gap-2 flex flex-row w-full pl-10 bg-primary-default"
       >
         <NavigationItem
           isSelected={currentPage === 'home'}
