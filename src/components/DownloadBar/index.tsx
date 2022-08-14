@@ -1,9 +1,9 @@
-import Button from "../Button";
+import Button from '../Button'
 
 interface Props {
-  itemURL: string;
-  onChange: (itemURL: string) => void;
-  handleDownload: () => void;
+  itemURL: string
+  onChange: (itemURL: string) => void
+  handleDownload: () => void
 }
 
 const DownloadBar = ({ itemURL, onChange, handleDownload }: Props) => {
@@ -26,11 +26,11 @@ const DownloadBar = ({ itemURL, onChange, handleDownload }: Props) => {
       <Button
         primary
         className="mt-5 px-4"
-        text={"Download"}
+        text={'Download'}
         onClick={handleDownload}
       />
     </div>
-  );
-};
+  )
+}
 
-export default DownloadBar;
+export default DownloadBar

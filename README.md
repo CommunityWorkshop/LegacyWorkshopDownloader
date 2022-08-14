@@ -1,4 +1,3 @@
-
 ![CWD_Logo-Wide.png](https://iili.io/UNMUBa.png)
 
 [![Discord](https://img.shields.io/discord/980492607778091058?color=%235865F2&label=Discord&logo=Discord&style=flat-square)](https://discord.com/invite/TrxaNYb2Vv)
@@ -10,12 +9,10 @@
 ![Update](https://img.shields.io/github/last-commit/Community-Workshop-Downloader/CommunityWorkshopMain?label=Latest%20Update&style=flat-square)
 ![Version](https://img.shields.io/github/v/tag/Community-Workshop-Downloader/CommunityWorkshopMain?label=Version&style=flat-square&color=lightgrey)
 [![Windows](https://img.shields.io/badge/-Windows-%230078D6?style=flat-square&logo=Windows)](https://www.microsoft.com/en-gb/software-download/windows10)
+
 # Steam Workshop Downloader
+
 A brief description of what this project does and who it's for
-
-
-
-
 
 ### Installation
 
@@ -24,12 +21,13 @@ text
 ```
 text
 ```
-    
+
 ### Screenshots
+
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+### Game Support List
 
-### Game Support List 
 🆓✅ Everything on https://steamdb.info/sub/17906/apps/ \
 🆓✅ Action Sandbox\
 🆓✅ TearDown\
@@ -80,22 +78,31 @@ text
 🆕⚠️ Wreckfest
 
 **Last Updated 08/08/2022**
+
 ### FAQ
+
 #### Question 1
+
 Answer 1
 
 #### Question 2
+
 Answer 2
 
-
 ### Changelog
+
 #### Workshop Downloader v0.2.0a
+
 📝 UI updated\
-🆕  Ability to change default download location\
-🆕  Added auto extract option
+🆕 Ability to change default download location\
+🆕 Added auto extract option
+
 #### Workshop Downloader v0.2.5a
+
 📝 Minor UI changes
+
 #### Workshop Downloader v0.3.0a
+
 🆕 Added support for all the games in https://ggntw.com/steam \
 🆕 Added support for Action Sandbox\
 🆕 Added support for TearDown\
@@ -112,19 +119,24 @@ Answer 2
 🆕 Added support for Unturned\
 🆕 Added support for Stormworks: Build and Rescue\
 🆕 Added support for Stellaris\
-🆕  New donate button\
+🆕 New donate button\
 📝 Some other minor changes
+
 #### Workshop Downloader v0.3.1a
+
 🛠️ Fixed downloading issue with GGNetwork
+
 #### Workshop Downloader v0.3.2a
+
 🛠️ Moved "Caves of Qud" from ggetwork to CWD
 
-
 ### Authors
+
 Made with 💖 by: [Snkt01](https://github.com/snkt01), [SlejmUr](https://github.com/SlejmUr), [GamingNerdLeith2022](https://github.com/GamingNerdLeith2020)
 & [The Community Workshop on Discord](https://discord.com/invite/TrxaNYb2Vv)
 
 ### Acknowledgements
+
 Thanks for these awesome resources that were used during the development of the Community Workshop Downloader:
 
 [GGNetwork - Allowing us to use their API to support more games](https://ggntw.com/steam)\
@@ -143,8 +155,8 @@ Thanks for these awesome resources that were used during the development of the 
 [Simple Icons - Giving us a massive libary of company logos](https://simpleicons.org/)\
 []()\
 []()
+
 ### Related
 
 Here are some related projects\
 [Awesome README](https://github.com/matiassingers/awesome-readme)
-

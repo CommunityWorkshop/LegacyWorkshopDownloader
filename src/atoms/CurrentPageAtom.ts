@@ -1,6 +1,6 @@
-import { atom } from "recoil";
+import { atom } from 'recoil'
 
 export const currentPageAtom = atom({
-  key: "currentPageAtom",
-  default: "home",
-});
+  key: 'currentPageAtom',
+  default: 'home',
+})

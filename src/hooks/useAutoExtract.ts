@@ -1,29 +1,29 @@
-import { ipcRenderer } from "electron";
-import { useEffect, useState } from "react";
+import { ipcRenderer } from 'electron'
+import { useEffect, useState } from 'react'
 
 const useAutoExtract = () => {
   // * States
-  const [autoExtractEnabled, setAutoExtractEnabled] = useState(false);
+  const [autoExtractEnabled, setAutoExtractEnabled] = useState(false)
 
   // * Effects
   useEffect(() => {
-    getIsAutoExtractEnabled();
-  }, []);
+    getIsAutoExtractEnabled()
+  }, [])
 
   // * Functions
   const getIsAutoExtractEnabled = async () => {
     const autoExtractEnabledLocal = await ipcRenderer.invoke(
-      "getIsAutoExtractEnabled"
-    );
-    setAutoExtractEnabled(autoExtractEnabledLocal);
-  };
+      'getIsAutoExtractEnabled'
+    )
+    setAutoExtractEnabled(autoExtractEnabledLocal)
+  }
 
   const changeAutoExtract = async (value: boolean) => {
-    await ipcRenderer.invoke("changeAutoExtract", value);
-    setAutoExtractEnabled(value);
-  };
+    await ipcRenderer.invoke('changeAutoExtract', value)
+    setAutoExtractEnabled(value)
+  }
 
-  return { autoExtractEnabled, changeAutoExtract };
-};
+  return { autoExtractEnabled, changeAutoExtract }
+}
 
-export default useAutoExtract;
+export default useAutoExtract

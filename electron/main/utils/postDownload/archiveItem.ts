@@ -1,5 +1,5 @@
-import archiver from "archiver";
-import fs from "fs";
+import archiver from 'archiver'
+import fs from 'fs'
 
 export default async function archiveItem(
   sourcePath: string,
@@ -7,17 +7,17 @@ export default async function archiveItem(
   appId: string,
   zipPath: string
 ) {
-  const archivePath = zipPath;
-  const output = fs.createWriteStream(archivePath);
-  const archive = archiver("zip", { zlib: { level: 9 } });
+  const archivePath = zipPath
+  const output = fs.createWriteStream(archivePath)
+  const archive = archiver('zip', { zlib: { level: 9 } })
 
   return new Promise<string>((resolve, reject) => {
     archive
       .directory(sourcePath, false)
-      .on("error", (err) => reject(err))
-      .pipe(output);
+      .on('error', (err) => reject(err))
+      .pipe(output)
 
-    output.on("close", () => resolve(archivePath));
-    archive.finalize();
-  });
+    output.on('close', () => resolve(archivePath))
+    archive.finalize()
+  })
 }
