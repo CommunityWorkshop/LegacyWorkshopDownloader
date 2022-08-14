@@ -1,9 +1,9 @@
-import { Icon } from "@iconify/react";
+import { Icon } from '@iconify/react'
 
 interface props {
-  icon: string;
-  onClick: () => void;
-  className?: string;
+  icon: string
+  onClick: () => void
+  className?: string
 }
 
 const IconButton = ({ icon, onClick, className }: props) => {
@@ -21,7 +21,7 @@ const IconButton = ({ icon, onClick, className }: props) => {
         icon={icon}
       />
     </button>
-  );
-};
+  )
+}
 
-export default IconButton;
+export default IconButton

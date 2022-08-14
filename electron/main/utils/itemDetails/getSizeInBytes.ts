@@ -10,7 +10,7 @@ export default function getSizeInBytes(page: HTMLPage) {
   let sizeInMBString = sizeString?.match(regax)?.[0].replace(/,/g, '')
   if (sizeInMBString) {
     const sizeInMB = parseFloat(sizeInMBString)
-    const sizeInBytes = sizeInMB * 1000 * 1000
+    const sizeInBytes = sizeInMB * 1024 * 1024
     return parseFloat(sizeInBytes.toFixed(3))
   }
 }

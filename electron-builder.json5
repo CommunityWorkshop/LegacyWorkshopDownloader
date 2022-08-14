@@ -2,30 +2,30 @@
  * @see https://www.electron.build/configuration/configuration
  */
 {
-  appId: "com.community.steamworkshopdownloader",
-  productName: "CWD - Community Workshop Downloader",
-  copyright: "Copyright © 2022 ${author}",
+  appId: 'com.community.steamworkshopdownloader',
+  productName: 'CWD - Community Workshop Downloader',
+  copyright: 'Copyright © 2022 ${author}',
   asar: true,
   directories: {
-    output: "release/${version}",
-    buildResources: "electron/resources",
+    output: 'release/${version}',
+    buildResources: 'electron/resources',
   },
   extraResources: [
     {
-      from: "./extra",
-      to: "./../extra",
-      filter: ["**/*"],
+      from: './extra',
+      to: './../extra',
+      filter: ['**/*'],
     },
   ],
-  files: ["dist"],
+  files: ['dist'],
   win: {
     target: [
       {
-        target: "nsis",
-        arch: ["x64"],
+        target: 'nsis',
+        arch: ['x64'],
       },
     ],
-    artifactName: "${productName}-Windows-${version}-Setup.${ext}",
+    artifactName: '${productName}-Windows-${version}-Setup.${ext}',
   },
   nsis: {
     oneClick: false,
@@ -34,11 +34,11 @@
     deleteAppDataOnUninstall: false,
   },
   mac: {
-    target: ["dmg"],
-    artifactName: "${productName}-Mac-${version}-Installer.${ext}",
+    target: ['dmg'],
+    artifactName: '${productName}-Mac-${version}-Installer.${ext}',
   },
   linux: {
-    target: ["AppImage"],
-    artifactName: "${productName}-Linux-${version}.${ext}",
+    target: ['AppImage'],
+    artifactName: '${productName}-Linux-${version}.${ext}',
   },
 }

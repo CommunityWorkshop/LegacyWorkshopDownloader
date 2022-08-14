@@ -13,8 +13,6 @@ const envContent = Object.entries(pkg.env).map(([key, val]) => `${key}=${val}`)
 fs.writeFileSync(path.join(__dirname, '.debug.env'), envContent.join('\n'))
 
 // bootstrap
-spawn(
-  process.platform === 'win32' ? 'npm.cmd' : 'npm',
-  ['run', 'dev'],
-  { stdio: 'inherit' },
-)
+spawn(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['run', 'dev'], {
+  stdio: 'inherit',
+})

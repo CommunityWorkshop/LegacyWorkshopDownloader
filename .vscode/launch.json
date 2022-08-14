@@ -7,10 +7,7 @@
     {
       "name": "Debug App",
       "preLaunchTask": "start .debug.script.mjs",
-      "configurations": [
-        "Debug Main Process",
-        "Debug Renderer Process"
-      ],
+      "configurations": ["Debug Main Process", "Debug Renderer Process"],
       "presentation": {
         "hidden": false,
         "group": "",
@@ -39,6 +36,6 @@
       "port": 9229,
       "request": "attach",
       "type": "pwa-chrome"
-    },
+    }
   ]
 }

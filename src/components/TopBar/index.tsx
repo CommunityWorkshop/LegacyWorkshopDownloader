@@ -1,23 +1,28 @@
-import { currentPageAtom } from "@/atoms/CurrentPageAtom";
+import { currentPageAtom } from '@/atoms/CurrentPageAtom'
 import {
+  ArrowMinimize16Regular,
   Dismiss12Regular,
   Home24Regular,
   Settings24Regular,
-} from "@fluentui/react-icons";
-import { ipcRenderer } from "electron";
-import { useRecoilState } from "recoil";
-import NavigationItem from "./NavigationItem";
+} from '@fluentui/react-icons'
+import { ipcRenderer } from 'electron'
+import { useRecoilState } from 'recoil'
+import NavigationItem from './NavigationItem'
 
 const TopBar = () => {
   // * Atoms
-  const [currentPage, setCurrentPage] = useRecoilState(currentPageAtom);
+  const [currentPage, setCurrentPage] = useRecoilState(currentPageAtom)
 
   // * Effects
 
   // * Functions
   const handleClose = () => {
-    ipcRenderer.invoke("close");
-  };
+    ipcRenderer.invoke('close')
+  }
+
+  const handleMinimize = () => {
+    ipcRenderer.invoke('minimize')
+  }
 
   return (
     <div className="flex drag flex-row border-b-2 border-b-black">
@@ -44,20 +49,20 @@ const TopBar = () => {
         style={{
           marginLeft: -75,
         }}
-        className="flex-1  flex flex-row w-full pl-10 bg-primary-default"
+        className="flex-1 gap-2 flex flex-row w-full pl-10 bg-primary-default"
       >
         <NavigationItem
-          isSelected={currentPage === "home"}
+          isSelected={currentPage === 'home'}
           onClick={() => {
-            setCurrentPage("home");
+            setCurrentPage('home')
           }}
           name="Home"
           Icon={<Home24Regular className="text-white" />}
         />
         <NavigationItem
-          isSelected={currentPage === "settings"}
+          isSelected={currentPage === 'settings'}
           onClick={() => {
-            setCurrentPage("settings");
+            setCurrentPage('settings')
           }}
           name="Settings"
           Icon={<Settings24Regular className="text-white" />}
@@ -65,17 +70,28 @@ const TopBar = () => {
       </div>
       {/* window actions */}
       <div className="flex flex-1 bg-primary-default justify-end">
-        <div className="aspect-square flex items-center justify-center h-full ">
+        <div className="flex mr-5 gap-2 items-center justify-center h-full ">
+          <button
+            onClick={handleMinimize}
+            className="bg-white nodrag border-b-2 hover:border-opacity-5 border-neutral-700
+            border-opacity-50 hover:shadow-xl
+            transition-all hover:bg-opacity-20 border flex items-center
+            justify-center bg-opacity-5 h-6 w-6 p-1 aspect-square rounded-full"
+          >
+            <ArrowMinimize16Regular className="text-white" />
+          </button>
           <button
             onClick={handleClose}
-            className="bg-white nodrag border-b-2 hover:border-opacity-5 border-neutral-700 border-opacity-50 hover:shadow-xl transition-all hover:bg-opacity-20 border flex items-center justify-center bg-opacity-5 h-6 w-6 aspect-square rounded-full"
+            className="bg-white nodrag border-b-2 hover:border-opacity-5
+            border-neutral-700 border-opacity-50 hover:shadow-xl transition-all hover:bg-opacity-20
+            border flex items-center justify-center bg-opacity-5 h-6 w-6 aspect-square rounded-full"
           >
             <Dismiss12Regular className="text-white" />
           </button>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TopBar;
+export default TopBar

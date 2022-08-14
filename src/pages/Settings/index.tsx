@@ -1,17 +1,17 @@
-import IconButton from "@/components/IconButton";
-import useAutoExtract from "@/hooks/useAutoExtract";
-import useDownloadLocation from "@/hooks/useDownloadLocation";
-import { ipcRenderer } from "electron";
+import IconButton from '@/components/IconButton'
+import useAutoExtract from '@/hooks/useAutoExtract'
+import useDownloadLocation from '@/hooks/useDownloadLocation'
+import { ipcRenderer } from 'electron'
 
 const Settings = () => {
   // * Hooks
-  const { downloadLocation, selectFolder } = useDownloadLocation();
-  const { autoExtractEnabled, changeAutoExtract } = useAutoExtract();
+  const { downloadLocation, selectFolder } = useDownloadLocation()
+  const { autoExtractEnabled, changeAutoExtract } = useAutoExtract()
 
   // * Functions
   const handleOpenDownloadFolder = () => {
-    ipcRenderer.invoke("openDownloadFolder");
-  };
+    ipcRenderer.invoke('openDownloadFolder')
+  }
 
   return (
     <div className="sm:max-w-lg flex-col lg:max-w-2xl xl:max-w-4xl self-center py-5 flex w-full">
@@ -20,13 +20,13 @@ const Settings = () => {
         <div className="w-full flex mt-2 flex-row items-center justify-center">
           <button
             onClick={selectFolder}
-            className="bg-white hover:bg-opacity-10 w-full flex items-start rounded-md bg-opacity-5 py-2 px-5"
+            className="bg-white hover:bg-opacity-10 transition-all w-full flex items-start rounded-md bg-opacity-5 py-2 px-5"
           >
             <h1 className="text-white font-light">{downloadLocation}</h1>
           </button>
           <IconButton
             className="ml-2"
-            icon={"fluent:open-16-regular"}
+            icon={'fluent:open-16-regular'}
             onClick={handleOpenDownloadFolder}
           />
         </div>
@@ -50,7 +50,7 @@ const Settings = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Settings;
+export default Settings

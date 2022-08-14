@@ -1,16 +1,16 @@
-import fs from "fs-extra";
-import store from "../store";
+import fs from 'fs-extra'
+import store from '../store'
 
-const downloadLocation = store.get("downloadLocation");
+const downloadLocation = store.get('downloadLocation')
 
 export const checkIsFileDownloaded = (itemId: string) => {
-  const zipPath = `${downloadLocation}/${itemId}.zip`;
-  const savePath = `${downloadLocation}/${itemId}`;
+  const zipPath = `${downloadLocation}/${itemId}.zip`
+  const savePath = `${downloadLocation}/${itemId}`
 
   if (fs.existsSync(zipPath) || fs.existsSync(savePath)) {
-    console.log("Zip file already exists, skipping download");
-    return { isAvailable: true, path: zipPath };
+    console.log('Zip file already exists, skipping download')
+    return { isAvailable: true, path: zipPath }
   } else {
-    return { isAvailable: false, path: "" };
+    return { isAvailable: false, path: '' }
   }
-};
+}
