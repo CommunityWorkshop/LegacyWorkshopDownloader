@@ -39,32 +39,56 @@ const Preview = ({ itemURL }: Props) => {
   const getItemData = async () => {
     setLoading(true)
     const data = await ipcRenderer.invoke('getItemData', itemId)
-    console.log(data)
-    setItemData(data)
+    // Show preview if item name and size found otherwise show nothing
+    if (data.name && data.sizeInBytes) {
+      console.log(data)
+      setItemData(data)
+    } else {
+      setItemId(undefined)
+    }
     setLoading(false)
   }
+
+  const openItemInBrowser = () => {
+    ipcRenderer.invoke('openLink', itemURL)
+  }
+
   if (itemId) {
     return (
-      <div className="py-5 bg-white bg-opacity-5 mt-8 px-5 rounded-lg">
-        {loading && <Loading />}
+      <div className="mt-4 flex flex-col gap-4 items-center justify-center">
+        <div className="border-t-2 border-white w-36 border-opacity-5" />
+        <div className="py-5 bg-white bg-opacity-5 px-5 rounded-lg">
+          {loading && <Loading />}
 
-        {!loading && itemData && (
-          <div className="flex flex-row items-center justify-center">
-            <img
-              className="w-24 h-24 rounded-md"
-              src={itemData.thumbnail}
-              alt={itemData.name}
-            />
-            <div className="flex flex-col overflow-hidden ml-4 max-w-xs">
-              <h3 className="text-white text-sm text-ellipsis whitespace-nowrap text-opacity-70">
-                {itemData?.name}
-              </h3>
-              <h3 className="text-white mt-1 font-medium text-sm ">
-                {bytes(itemData?.sizeInBytes, { unitSeparator: ' ' })}
-              </h3>
+          {!loading && itemData && (
+            <div className="flex flex-row items-center justify-center">
+              <button
+                className="hover:opacity-75 transition-all"
+                onClick={openItemInBrowser}
+              >
+                <img
+                  className="w-24 h-24 rounded-md"
+                  src={itemData.thumbnail}
+                  alt={itemData.name}
+                />
+              </button>
+
+              <div className="flex flex-col ml-4">
+                <h3
+                  className="text-white max-w-xs overflow-hidden text-sm whitespace-nowrap text-ellipsis
+            text-opacity-70"
+                >
+                  {itemData?.name}
+                </h3>
+                {/* File size */}
+                <h3 className="text-white mt-1 font-medium text-sm ">
+                  {itemData.sizeInBytes &&
+                    bytes(itemData.sizeInBytes, { unitSeparator: ' ' })}
+                </h3>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     )
   } else {

@@ -35,6 +35,7 @@
     "@iconify/react": "^3.2.2",
     "@types/archiver": "^5.3.1",
     "@types/axios": "^0.14.0",
+    "@types/bytes": "^3.1.1",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
