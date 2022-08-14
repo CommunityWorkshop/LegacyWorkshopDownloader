@@ -86,7 +86,7 @@ const Home = () => {
   }
 
   const handleOpenDiscord = () => {
-    ipcRenderer.invoke('openLink', 'https://discord.gg/adYjYJam')
+    ipcRenderer.invoke('openLink', 'https://www.discord.gg/MAj9FdSZmp')
   }
 
   return (
