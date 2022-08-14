@@ -31,7 +31,8 @@ async function createWindow() {
   win = new BrowserWindow({
     title: 'Steam workshop downloader',
     autoHideMenuBar: true,
-    titleBarStyle: 'hidden',
+    titleBarStyle: "hidden",
+    frame: false,
     webPreferences: {
       preload: splash,
       nodeIntegration: true,
