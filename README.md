@@ -162,10 +162,18 @@ Thanks for these awesome resources that were used during the development of the 
 ### Related
 
 Related Projects:\
-[]()\
+[GMP Pubisher - Workshop Downloader for Garry's Mod](https://github.com/WilliamVenner/gmpublisher)\
+[WorkshopDL - Fully Open-Source Workshop Downloader](https://github.com/TheVovolo/WorkshopDL)\
+[steamworkshop.download - Broken but was the first to fill the void](http://steamworkshop.download/)\
+[steam-workshop-downloader.com - Website to replace SWD.io](https://steam-workshop-downloader.com/)\
+[Shadoxxhd's Workshop - Workshop Attempt (Obsolete)](https://github.com/shadoxxhd/steamworkshopdownloader)\
+[Husko's Workshop Downloader - Workshop Attempt (Obsolete)](https://github.com/Official-Husko/Husko-s-SteamWorkshop-Downloader)\
+[Steam Workshop Downloader - Workshop Attempt (Obsolete)](https://github.com/SegoCode/swd)\
+[Be1zebub Workshop Downloader - Workshop Attempt (Obsolete)](https://github.com/Be1zebub/Steam-Workshop-Downloader)\
+[Geam Workshop Downloader - Workshop Attempt (Obsolete)](https://github.com/Geam/steam_workshop_downloader)\
+[SteamCMD API - Programmable way to retrieve information](https://www.steamcmd.net/)\
 []()
 
 From Community Workshop:\
 [r/sharemyworkshop - Sharing people's workshop on reddit](https://www.reddit.com/r/sharemyworkshop/)\
-[SteamCMD API - Programmable way to retrieve information](https://www.steamcmd.net/)\
 []()
