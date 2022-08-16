@@ -34,8 +34,8 @@ text
 🆓✅ Everything on https://steamdb.info/sub/17906/apps/ \
 🆓✅ Action Sandbox\
 🆓✅ Age of Wonders: Planetfall\
-🆕✅ Barony\
-🆕✅ Barotrauma\
+🆓✅ Barony\
+🆓✅ Barotrauma\
 🆓✅ Brick Rigs\
 🆓✅ Caves of Qud\
 🆓✅ City Game Studio\
@@ -45,7 +45,7 @@ text
 🆓✅ Gloomhaven\
 🆓✅ Haydee 2\
 🆓✅ Hydroneer\
-🆕✅ Insurgency\
+🆓✅ Insurgency\
 🆓✅ KeeperRL\
 🆓✅ Kenshi\
 🆓✅ Lumencraft\
@@ -65,6 +65,7 @@ text
 🆓✅ Stationeers\
 🆓✅ Stellaris\
 🆓✅ Stormworks: Build and Rescue\
+🆕✅ Terraria\
 🆓✅ TearDown\
 🆓✅ The Hand of Merlin\
 🆓✅ The Talos Principle\
@@ -73,6 +74,7 @@ text
 🆓✅ Transport Fever\
 🆓✅ Transport Fever 2\
 🆓✅ Unturned\
+🆕✅ Wallpapper Engine\
 🆓✅ Warhammer 40,000: Gladius - Relics of War\
 🆓✅ WARNO\
 🆓✅ WE ARE FOOTBALL\
@@ -83,7 +85,7 @@ text
 🆓⚠️ Garry's Mod (UNPACK LATER)\
 🆓⚠️ Parkitect
 
-**Last Updated 12/08/2022**
+**Last Updated 16/08/2022**
 ### FAQ
 #### Question 1
 Answer 1
