@@ -5,33 +5,29 @@ export const downloadFromGGNTW = async (itemId: string, appId: string) => {
   console.log('downloading from gg network🗼')
   try {
     // Sending post request to steamSearch.php to initiate download
-    const res = await axios.post(
-      'https://api.ggntw.com/webapi/SteamSearch.php',
-      {
-        url: `https://steamcommunity.com/sharedfiles/filedetails/?id=${itemId}`,
-      }
-    )
+    const res = await axios.post('https://api.ggntw.com/steam.request', {
+      url: `https://steamcommunity.com/sharedfiles/filedetails/?id=${itemId}`,
+    })
     try {
-      const ggntwCdnUrl = `https://${res.data.server}-cdn.ggntw.com`
+      const { data } = res
       // if status is 1, then file is available to download
       // other wise keep waiting for status to be 1
       let downloadFilePath = await handleResponseStatus(
         res.data.status,
-        `${ggntwCdnUrl}/${appId}/${itemId}.zip`
+        data.url
       )
       if (downloadFilePath) {
         return downloadFilePath
       } else {
         const waitForDownload = new Promise<string>((resolve) => {
           const interval = setInterval(async () => {
-            const res = await axios.post(
-              'https://api.ggntw.com/webapi/SteamUpdate.php',
-              { id: itemId }
-            )
+            const res = await axios.post('https://api.ggntw.com/steam.update', {
+              id: itemId,
+            })
             try {
               downloadFilePath = await handleResponseStatus(
                 res.data.status,
-                `${ggntwCdnUrl}/${appId}/${itemId}.zip`,
+                data.url,
                 interval
               )
             } catch (error) {

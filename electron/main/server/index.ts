@@ -1,10 +1,10 @@
 import express from 'express'
-import { ggntwGames } from '../constants'
 import { DownloadMethod } from '../types'
 import { checkIsFileDownloaded } from '../utils/checkIsFileDownloaded'
 import downloadFile from '../utils/downloadFile'
 import { downloadFromGGNTW } from '../utils/DownloadFromGGNTW'
 import { cancelGGNTWDownload } from '../utils/DownloadFromGGNTW/downloadFromURL'
+import { getGgntwGamesList } from '../utils/DownloadFromGGNTW/getGnntwGamesList'
 import { GGNTWdownloadStatus } from '../utils/DownloadFromGGNTW/handleResponseStatus'
 import getItemDetails from '../utils/itemDetails'
 var cors = require('cors')
@@ -40,9 +40,11 @@ export default function startServer() {
       console.log('App Id is 🆔 : ', itemDetails.appId)
 
       // Is this game available on ggntw?
+
+      const ggntwGames = await getGgntwGamesList()
       const isAvailableOnGGN =
-        (await ggntwGames.filter((game) => game.appId == itemDetails.appId)
-          .length) > 0
+        ggntwGames.filter((game) => game.id.toString() === itemDetails.appId)
+          .length > 0
 
       console.log('Is this game available on ggntw? ', isAvailableOnGGN)
 
