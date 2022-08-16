@@ -125,6 +125,10 @@ Answer 2
 #### Workshop Downloader v0.3.3a
 🆕 Added Item Preview\
 📝 Minor UI changes
+#### Workshop Downloader v0.3.4a
+🛠️ Fixed ggntw games support (now on it will be in sync with ggntw thanks @ MrDanya)\
+🛠️ Minor fixes\
+🛠️ Electron version bump (maybe solve some issues while opening app)
 
 ### Authors
 Made with 💖 by: [Snkt01](https://github.com/snkt01), [SlejmUr](https://github.com/SlejmUr), [GamingNerdLeith2022](https://github.com/GamingNerdLeith2020)
