@@ -3,7 +3,9 @@ import DownloadBar from '@/components/DownloadBar'
 import Loading from '@/components/Loading'
 import Preview from '@/components/Preview'
 import useDownloadStatus from '@/hooks/useDownloadStatus'
+import useGgntwGameslist from '@/hooks/useGgntwGameslist'
 import getItemIdFromURL from '@/utils/getItemIdFromUrl'
+import { handleOpenGGNTW } from '@/utils/handleOpenGGNTW'
 import { Games20Regular, Money20Regular } from '@fluentui/react-icons'
 import axios from 'axios/dist/axios'
 import { ipcRenderer } from 'electron'
@@ -20,11 +22,7 @@ const Home = () => {
   // * Hooks
   const navigate = useNavigate()
   const { status, method } = useDownloadStatus(loading)
-
-  // * Functions
-  const handleOpenGGNTW = () => {
-    ipcRenderer.invoke('openLink', 'https://ggntw.com/')
-  }
+  const ggntwGamesList = useGgntwGameslist()
 
   const handleDownload = async () => {
     setLoading(true)
@@ -134,7 +132,7 @@ const Home = () => {
             itemURL={itemURL}
             onChange={setItemURL}
           />
-          <Preview itemURL={itemURL} />
+          <Preview ggntwGamesList={ggntwGamesList} itemURL={itemURL} />
         </div>
       </div>
     </div>

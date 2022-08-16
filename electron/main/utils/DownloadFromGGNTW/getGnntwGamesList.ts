@@ -1,9 +1,5 @@
 import axios from 'axios'
-
-type GgntwGame = {
-  id: number
-  name: string
-}
+import { GgntwGame } from '../../../../lib/globalTypes'
 
 export const getGgntwGamesList = async (): Promise<GgntwGame[]> => {
   try {

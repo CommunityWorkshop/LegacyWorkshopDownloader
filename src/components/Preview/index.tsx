@@ -2,14 +2,17 @@ import { validateAndGetId } from '@/utils/validateAndGetId'
 import { Image32Regular } from '@fluentui/react-icons'
 import bytes from 'bytes'
 import { ipcRenderer } from 'electron'
+import { GgntwGame, ItemDetails } from 'lib/globalTypes'
 import { useEffect, useState } from 'react'
 import Loading from '../Loading'
+import GGNTWBadge from './GGNTWBadge'
 
 interface Props {
   itemURL: string
+  ggntwGamesList: GgntwGame[]
 }
 
-const Preview = ({ itemURL }: Props) => {
+const Preview = ({ itemURL, ggntwGamesList }: Props) => {
   const [itemId, setItemId] = useState<string | undefined>()
   const [loading, setLoading] = useState(false)
   const [itemData, setItemData] = useState<ItemDetails>()
@@ -64,14 +67,17 @@ const Preview = ({ itemURL }: Props) => {
           {loading && <Loading />}
 
           {!loading && itemData && (
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex relative flex-row items-center justify-center">
+              {/* show ggntw badge if this game is available on their website */}
+              {ggntwGamesList.filter((game) => game.id === itemData.appId)
+                .length > 0 && <GGNTWBadge />}
               <button
                 className="hover:opacity-75 bg-opacity-5 rounded-md bg-white w-24 h-24 transition-all"
                 onClick={openItemInBrowser}
               >
                 {imageURl ? (
                   <img
-                    className="w-full h-full"
+                    className="w-full h-full rounded-md"
                     src={imageURl}
                     alt={itemData.name}
                   />
