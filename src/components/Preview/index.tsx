@@ -1,4 +1,5 @@
 import { validateAndGetId } from '@/utils/validateAndGetId'
+import { Image32Regular } from '@fluentui/react-icons'
 import bytes from 'bytes'
 import { ipcRenderer } from 'electron'
 import { useEffect, useState } from 'react'
@@ -12,6 +13,8 @@ const Preview = ({ itemURL }: Props) => {
   const [itemId, setItemId] = useState<string | undefined>()
   const [loading, setLoading] = useState(false)
   const [itemData, setItemData] = useState<ItemDetails>()
+
+  const imageURl = itemData?.thumbnail ?? itemData?.images?.[0]
 
   useEffect(() => {
     getItemId(itemURL)
@@ -63,14 +66,18 @@ const Preview = ({ itemURL }: Props) => {
           {!loading && itemData && (
             <div className="flex flex-row items-center justify-center">
               <button
-                className="hover:opacity-75 transition-all"
+                className="hover:opacity-75 bg-opacity-5 rounded-md bg-white w-24 h-24 transition-all"
                 onClick={openItemInBrowser}
               >
-                <img
-                  className="w-24 h-24 rounded-md"
-                  src={itemData.thumbnail}
-                  alt={itemData.name}
-                />
+                {imageURl ? (
+                  <img
+                    className="w-full h-full"
+                    src={imageURl}
+                    alt={itemData.name}
+                  />
+                ) : (
+                  <Image32Regular color="white" fontSize={40} />
+                )}
               </button>
 
               <div className="flex flex-col ml-4">
