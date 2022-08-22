@@ -10,7 +10,11 @@
 ![GitHub Program](https://img.shields.io/github/languages/code-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Project%20Size&style=flat-square&logo=DocuSign&logoColor=white)
 ![Update](https://img.shields.io/github/last-commit/Community-Workshop-Downloader/CommunityWorkshopMain?label=Latest%20Update&style=flat-square)
 ![Version](https://img.shields.io/github/v/tag/Community-Workshop-Downloader/CommunityWorkshopMain?label=Version&style=flat-square&color=lightgrey)
-[![Windows](https://img.shields.io/badge/-Windows-%230078D6?style=flat-square&logo=Windows)](https://www.microsoft.com/en-gb/software-download/windows10) 
+[![Virus Total Report](https://img.shields.io/badge/Virus%20Total%20Report-color=%235865F2?style=flat-square&logo=Adguard&logoColor=ffffff)](https://bit.ly/3pCITqo)
+
+[![Windows](https://img.shields.io/badge/-Windows-%230078D6?style=for-the-badge&logo=Windows)](https://www.microsoft.com/en-gb/software-download/windows10) 
+
+
 # Steam Workshop Downloader
 A brief description of what this project does and who it's for
 
@@ -30,6 +34,49 @@ text
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
+### FAQ
+#### Why would I need this?
+If you own a game on a different platform like GOG or the Epic Games store, you can not download mods for the game, as the majority of mods are locked inside Steam's workshop. So instead of buying the game a second time to access the mods, you can simply use this tool.
+
+#### How does this work?
+Answer
+
+#### Is this safe to use?
+Answer: Yes
+
+#### Is this illegal to use?
+Short Answer: No\
+Long Answer: ---
+
+#### How can I help devlop this?
+Answer
+
+#### When are you going to support game X?
+Answer
+
+#### How would you ensure the cached mods are up to date? 
+Answer
+
+#### How can I get in contact with you?
+Answer
+
+#### Question
+Answer
+
+#### Question
+Answer
+
+#### Question
+Answer
+
+#### Question
+Answer
+
+#### Question
+Answer
+
+#### Question
+Answer
 ### Game Support List 
 🆓✅ Everything on https://steamdb.info/sub/17906/apps/ \
 🆓✅ Action Sandbox\
@@ -86,14 +133,6 @@ text
 🆓⚠️ Parkitect
 
 **Last Updated 16/08/2022**
-### FAQ
-#### Question 1
-Answer 1
-
-#### Question 2
-Answer 2
-
-
 ### Changelog
 #### Workshop Downloader v0.2.0a
 📝 UI updated\
@@ -159,6 +198,10 @@ Thanks for these awesome resources that were used during the development of the 
 [Electron.Build - Used to create the .exe files](https://www.electron.build/)\
 [Crowdin - Community translation of the project](https://crowdin.com/)\
 [Exe.io - Shortern Links with Adverts for funding](https://exe.io/)\
+[Porkbun.com - Buying domain for our website](https://porkbun.com/tld/app/?coupon=CODENEWBIE)\
+[Github Co-Pilot - Helping develop the application](https://github.com/features/copilot)\
+[]()\
+[]()\
 []()\
 []()
 ### Related
@@ -178,4 +221,8 @@ Related Projects:\
 
 From Community Workshop:\
 [r/sharemyworkshop - Sharing people's workshop on reddit](https://www.reddit.com/r/sharemyworkshop/)\
+[communityworkshopdownloader.app - [WIP] Our website for CWD](https://communityworkshopdownloader.app/)\
+[]()\
+[]()\
+[]()\
 []()
