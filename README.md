@@ -1,5 +1,5 @@
 
-![CWD_Logo-Wide.png](https://iili.io/rXNzwQ.png)
+![CWD_Logo-Wide.png](https://iili.io/rXDMvf.png)
 
 [![Discord](https://img.shields.io/discord/980492607778091058?color=%235865F2&label=Discord&logo=Discord&style=flat-square)](https://discord.com/invite/TrxaNYb2Vv)
 [![Reddit](https://img.shields.io/badge/Reddit-r%2FCommunityWorkshop-orange?style=flat-square&logo=Reddit)](https://www.reddit.com/r/CommunityWorkshop/)
