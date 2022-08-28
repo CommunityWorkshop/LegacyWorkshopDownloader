@@ -10,7 +10,7 @@
 ![GitHub Program](https://img.shields.io/github/languages/code-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Project%20Size&style=flat-square&logo=DocuSign&logoColor=white)
 ![Update](https://img.shields.io/github/last-commit/Community-Workshop-Downloader/CommunityWorkshopMain?label=Latest%20Update&style=flat-square)
 ![Version](https://img.shields.io/github/v/tag/Community-Workshop-Downloader/CommunityWorkshopMain?label=Version&style=flat-square&color=lightgrey)
-[![Virus Total Report](https://img.shields.io/badge/Virus%20Total%20Report-color=%235865F2?style=flat-square&logo=Adguard&logoColor=ffffff)](https://bit.ly/3pCITqo)
+[![Virus Total Report](https://img.shields.io/badge/Virus%20Total%20Report-color=%235865F2?style=flat-square&logo=AdGuard&logoColor=white)](https://bit.ly/3pCITqo)
 
 [![Windows](https://img.shields.io/badge/-Windows-%230078D6?style=for-the-badge&logo=Windows)](https://www.microsoft.com/en-gb/software-download/windows10) 
 
@@ -142,6 +142,7 @@ Answer
 🆓✅ Kenshi\
 🆓✅ Lumencraft\
 🆓✅ Miscreated\
+🆕✅ One Step From Eden\
 🆓✅ People Playground\
 🆓✅ Post Scriptum\
 🆓✅ Project Zomboid\
@@ -177,7 +178,7 @@ Answer
 🆓⚠️ Garry's Mod (UNPACK LATER)\
 🆓⚠️ Parkitect
 
-**Last Updated 16/08/2022**
+**Last Updated 26/08/2022**
 ### Changelog
 #### Workshop Downloader v0.2.0a
 📝 UI updated\
@@ -245,9 +246,6 @@ Thanks for these awesome resources that were used during the development of the 
 [Exe.io - Shortern Links with Adverts for funding](https://exe.io/)\
 [Porkbun.com - Buying domain for our website](https://porkbun.com/tld/app/?coupon=CODENEWBIE)\
 [Github Co-Pilot - Helping develop the application](https://github.com/features/copilot)\
-[]()\
-[]()\
-[]()\
 []()
 ### Related
 
@@ -262,12 +260,15 @@ Related Projects:\
 [Be1zebub Workshop Downloader - Workshop Attempt (Obsolete)](https://github.com/Be1zebub/Steam-Workshop-Downloader)\
 [Geam Workshop Downloader - Workshop Attempt (Obsolete)](https://github.com/Geam/steam_workshop_downloader)\
 [SteamCMD API - Programmable way to retrieve information](https://www.steamcmd.net/)\
+[GGNetwork - Website to download mods to replace SWD.io](https://ggntw.com/steam)\
+[Gramvio Workshop Downloader - Workshop Attempt (Broken)](https://gramvio.com/steam-workshop-downloader/)\
 []()
 
 From Community Workshop:\
 [r/sharemyworkshop - Sharing people's workshop on reddit](https://www.reddit.com/r/sharemyworkshop/)\
 [communityworkshopdownloader.app - [WIP] Our website for CWD](https://communityworkshopdownloader.app/)\
-[]()\
-[]()\
-[]()\
 []()
+
+### Legal
+
+*Community Workshop is not affiliated with Valve Corporation or Steam. Community Workshop Downloader is not affiliated with other downloading softwares unless specified* 
