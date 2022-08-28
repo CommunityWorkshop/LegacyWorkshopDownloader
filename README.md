@@ -26,52 +26,90 @@ A brief description of what this project does and who it's for
 To be able to download Steam Workshop mods through the Community Workshop Downloader (CWD) all you need to do is:
 
 Go to releases click on the [GitHub link](https://github.com/CommunityWorkshop/CommunityWorkshopDownloader/releases) which should look something like this: 
+
 ![1.png](https://iili.io/rX8r8X.png)
+
 Then click on `SteamWorkshopDownloader-Windows-0.2.0-Setup.exe`. GitHub should download an .exe file, double click on the file to make it run.\
 ***Note: There would probably be an alert by an antivirus or by windows security (That looks like a blue popup) because the program has not been signed yet (don't worry, just allow the app to run).*** *To allow the app to run click on* `More info`  *and then* `Run anyways`
+
 ![2.png](https://iili.io/rX8gat.png)
+
 After that an installer will appear, follow the instructions on the installer\
 Choose if you want to install the app for all users or just for yourself.
+
 ![3.png](https://iili.io/rX869n.png)
+
 Select the install location or where the program files will be located once downloaded (*remember the location*), If you want to change the default installation location click on `Browse`\
 Once you are happy with the installation location click install
+
 ![4.png](https://iili.io/rX8Pus.png)
+
 *The software will then start installing... (wait for 2-3 minutes)*\
 Once finish installing this will popup, you can leave the checkbox to run the software automatically after installation or click the check icon and click `Finish` to complete the installation
+
 ![5.png](https://iili.io/rX8iwG.png)
+
 ***Note: A firewall notice may appear, allow the program to have access to AT LEAST private networks and accept all admin prompts***
+
 ![6.png](https://iili.io/rX8stf.png)
+
 After that an installer will appear, follow the instructions on the installer.... when the program is downloaded a shortcut to the main .exe file should automagically be made if you cant find the shortcut go to the directory (or the place where you installed the program) should look something like this...
+
 ![7.png](https://iili.io/rX8Qn4.png)
+
 Double click on `SteamWorkshopDownloader.exe` to run the program... The Community Workshop Downloader will then popup.
+
 ![8.png](https://iili.io/rX8ZMl.png)
+
 Click on settings and set the location that you want to download the mods to (*I recommend to make a folder*)
+
 ![9.png](https://iili.io/rX8tP2.png)
+
 To change the location click on the file path that will then open a File Explorer window. (*Make sure it is a folder otherwise you would not be able to select it*)
+
 ![10.png](https://iili.io/rX8bFS.png)
+
 Once you feel comfortable with the location you picked. Click on `Select Folder`
+
 ![11.png](https://iili.io/rX8mc7.png)
+
 ***Additionally: You can view the download location of the mods by clicking the button besides the file path***
+
 ![12.png](https://iili.io/rX8pS9.png)
 
 ![13.png](https://iili.io/rXS99e.png)
+
 Afterwards, click on `Home`. Find the link to the mod that you wish to download from the Steam Workshop\
 The link is in the address bar of your browser (*In this example Google Chrome*) Copy the link
+
 ![14.png](https://iili.io/rXSHAu.png)
+
 Next return to Community Workshop Downloader, in the textbox where it says URL (*highlighted in red*), enter the link to the mod that you wish to download.
+
 ![15.png](https://iili.io/rXSJwb.png)
+
 ***Note: For the best performance, the link should not have any additional parameters and ending with an id number.***  To do this make sure to remove any parameters after the id number like `&searchtext=`\
 **For Example: <https://steamcommunity.com/sharedfiles/filedetails/?id=2323217614>**\
 Finally click the blue button that says "Download".
+
 ![16.png](https://iili.io/rX8vGp.png)
+
 If there isn't any issues the screen *should* blur and a spinning wheel with the words "Downloading" will appear. This means the mod is currently downloading...
+
 ![17.png](https://iili.io/rX886N.png)
+
 Once the mod has completed downloading a popup will appear. If you did everything right it should read "File Downloaded Successfully" with a little green tick.
+
 ![18.png](https://iili.io/rX8knR.png)
+
 Check the folder where you set the download location and there should be a zip file with a bunch of number that matches the workshop id of the mod. That is the mod downloaded from the Steam Workshop.
+
 ![19.png](https://iili.io/rX8OZv.png)
+
 ***Note: Check the file size to make sure it is above 0 Bytes and double click on the folder to make sure that it isn't corrupted.***
+
 ![20.png](https://iili.io/rX8UFI.png)
+
 **Vola! That is the mod downloaded, how you install it in your particular game(s) depends on what game you are playing but it should be similar to a Local install. I cant help you with that, but a quick googling should guide you.**
 
 You can support the active development of this project by donating money on our Ko-Fi page at: [ko-fi.com/communityworkshop](https://ko-fi.com/communityworkshop)
