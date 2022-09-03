@@ -309,4 +309,4 @@ From Community Workshop:\
 
 ### Legal
 
-*Community Workshop is not affiliated with Valve Corporation or Steam. Community Workshop Downloader is not affiliated with other downloading softwares unless specified* 
+*Community Workshop is not affiliated with Valve Corporation or Steam. Community Workshop Downloader is not affiliated with other downloading softwares unless specified. The Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.* 
