@@ -5,7 +5,7 @@
 [![Reddit](https://img.shields.io/badge/Reddit-r%2FCommunityWorkshop-orange?style=flat-square&logo=Reddit)](https://www.reddit.com/r/CommunityWorkshop/)
 [![Licence](https://img.shields.io/github/license/Community-Workshop-Downloader/CommunityWorkshopMain?color=%23A42E2B&label=Licence&logo=GNU&style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Downloads](https://img.shields.io/github/downloads/Community-Workshop-Downloader/CommunityWorkshopMain/total?label=Downloads&logo=GitHub&style=flat-square)](https://github.com/Community-Workshop-Downloader/CommunityWorkshopMain/releases)
-[![Donate Ko-Fi](https://img.shields.io/badge/Donate-Ko--Fi-FF5E5B?style=flat-square&logo=Ko-fi)](https://ko-fi.com/communityworkshopdownloader)
+[![Donate Ko-Fi](https://img.shields.io/badge/Donate-Ko--Fi-FF5E5B?style=flat-square&logo=Ko-fi)](https://ko-fi.com/communityworkshop)
 ![GitHub Size](https://img.shields.io/github/repo-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Repository%20Size&style=flat-square&logo=Hyper&logoColor=white)
 ![GitHub Program](https://img.shields.io/github/languages/code-size/Community-Workshop-Downloader/CommunityWorkshopMain?label=Project%20Size&style=flat-square&logo=DocuSign&logoColor=white)
 ![Update](https://img.shields.io/github/last-commit/Community-Workshop-Downloader/CommunityWorkshopMain?label=Latest%20Update&style=flat-square)
