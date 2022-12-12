@@ -1,6 +1,8 @@
 
 ![CWD_Logo-Wide.png](https://iili.io/rXDMvf.png)
 
+<details>
+  <summary>Old Description</summary>
 [![Discord](https://img.shields.io/discord/980492607778091058?color=%235865F2&label=Discord&logo=Discord&style=flat-square)](https://discord.com/invite/TrxaNYb2Vv)
 [![Reddit](https://img.shields.io/badge/Reddit-r%2FCommunityWorkshop-orange?style=flat-square&logo=Reddit)](https://www.reddit.com/r/CommunityWorkshop/)
 [![Licence](https://img.shields.io/github/license/Community-Workshop-Downloader/CommunityWorkshopMain?color=%23A42E2B&label=Licence&logo=GNU&style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.en.html)
@@ -14,8 +16,7 @@
 
 [![Windows](https://img.shields.io/badge/-Windows-%230078D6?style=for-the-badge&logo=Windows)](https://www.microsoft.com/en-gb/software-download/windows10) 
 
-
-# Workshop Downloader
+  # Workshop Downloader
 A brief description of what this project does and who it's for
 
 
@@ -310,3 +311,4 @@ From Community Workshop:\
 ### Legal
 
 *Community Workshop is not affiliated with Valve Corporation or Steam. Community Workshop Downloader is not affiliated with other downloading softwares unless specified. The Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.* 
+</details>
