@@ -11,7 +11,7 @@
 > **The latest version on GitHub is obsolete and is riddled with bugs, we recommend to use other workshop downloaders on the internet until Community Workshop is fixed**
 
 <details>
-  <summary>Old Descriptions</summary>
+  <summary>Description Archives</summary>
 <details>
   <summary>Version: 0.3.4</summary>
   
