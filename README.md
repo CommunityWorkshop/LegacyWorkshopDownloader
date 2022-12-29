@@ -1,8 +1,19 @@
 
 ![CWD_Logo-Wide.png](https://iili.io/rXDMvf.png)
 
+> **Note**
+>
+> The development of Community Workshop is currently on hold, this page will be updated once a new version is released.
+> The project **IS NOT** abandoned, we are activally developing it. 
+
+> **Warning**
+> 
+> **The latest version on GitHub is obsolete and is riddled with bugs, we recommend to use other workshop downloaders on the internet until Community Workshop is fixed**
+
 <details>
-  <summary>Old Description (Version: 0.3.4)</summary>
+  <summary>Old Descriptions</summary>
+<details>
+  <summary>Version: 0.3.4</summary>
   
 [![Discord](https://img.shields.io/discord/980492607778091058?color=%235865F2&label=Discord&logo=Discord&style=flat-square)](https://discord.com/invite/TrxaNYb2Vv)
 [![Reddit](https://img.shields.io/badge/Reddit-r%2FCommunityWorkshop-orange?style=flat-square&logo=Reddit)](https://www.reddit.com/r/CommunityWorkshop/)
@@ -312,4 +323,5 @@ From Community Workshop:\
 ### Legal
 
 *Community Workshop is not affiliated with Valve Corporation or Steam. Community Workshop Downloader is not affiliated with other downloading softwares unless specified. The Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.* 
+</details>
 </details>
