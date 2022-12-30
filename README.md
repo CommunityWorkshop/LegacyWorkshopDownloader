@@ -355,5 +355,9 @@ From Community Workshop:\
 
 <details>
   <summary>ReadMe.md Functionality</summary>
-  GitHub Admonition Refrence
+  GitHub Admonition Refrence:
+  
+  
+  Hidden Section Template:
+  </details><summary>SECTION_TITLE</summary>SECTION</details>
 </details>
