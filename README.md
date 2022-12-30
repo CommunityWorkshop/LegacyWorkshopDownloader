@@ -354,6 +354,6 @@ From Community Workshop:\
 </details>
 
 <details>
-  <summary>ReadMe Functionality</summary>
+  <summary>ReadMe.md Functionality</summary>
   GitHub Admonition Refrence
 </details>
