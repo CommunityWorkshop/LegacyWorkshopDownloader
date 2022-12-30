@@ -352,3 +352,7 @@ From Community Workshop:\
 </details>
 </details>
 </details>
+
+<details>
+  <summary>GitHub Admonition Refrence</summary>
+</details>
