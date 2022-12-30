@@ -355,20 +355,7 @@ From Community Workshop:\
 
 <details>
   <summary>ReadMe.md Functionality</summary>
-  GitHub Admonition Refrence:
-  git_admonition_warning: https://iili.io/HuK6U4p.png 
-  git_admonition_quote: https://iili.io/HuK6SGR.png
-  git_admonition_tip: https://iili.io/HuK68Cv.png
-  git_admonition_tip2: https://iili.io/HuK6kZJ.png
-  git_admonition_success: https://iili.io/HuK6eja.png
-  git_admonition_question: https://iili.io/HuK6OTg.png
-  git_admonition_note: https://iili.io/HuK6wyF.png
-  git_admonition_info: https://iili.io/HuK6jv1.png
-  git_admonition_bug: https://iili.io/HuK6hYP.png
-  git_admonition_danger: https://iili.io/HuK6X3B.png
-  git_admonition_example: https://iili.io/HuK6V4V.png
-  git_admonition_failure: https://iili.io/HuK6MEQ.png
   
-  Hidden Section Template:
+  **Hidden Section Template:**  
   <details><summary>SECTION_TITLE</summary>SECTION</details>
 </details>
