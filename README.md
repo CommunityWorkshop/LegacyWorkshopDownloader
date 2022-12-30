@@ -354,5 +354,6 @@ From Community Workshop:\
 </details>
 
 <details>
-  <summary>GitHub Admonition Refrence</summary>
+  <summary>ReadMe Functionality</summary>
+  GitHub Admonition Refrence
 </details>
