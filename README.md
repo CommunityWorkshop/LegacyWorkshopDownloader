@@ -359,5 +359,5 @@ From Community Workshop:\
   
   
   Hidden Section Template:
-  </details><summary>SECTION_TITLE</summary>SECTION</details>
+  <details><summary>SECTION_TITLE</summary>SECTION</details>
 </details>
