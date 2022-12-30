@@ -13,7 +13,7 @@
 <details>
   <summary>Description Archives</summary>
 <details>
-  <summary>Version: 0.3.4</summary>
+  <summary>[Obsolete] Version: 0.3.4</summary>
   
 [![Discord](https://img.shields.io/discord/980492607778091058?color=%235865F2&label=Discord&logo=Discord&style=flat-square)](https://discord.com/invite/TrxaNYb2Vv)
 [![Reddit](https://img.shields.io/badge/Reddit-r%2FCommunityWorkshop-orange?style=flat-square&logo=Reddit)](https://www.reddit.com/r/CommunityWorkshop/)
@@ -323,5 +323,29 @@ From Community Workshop:\
 ### Legal
 
 *Community Workshop is not affiliated with Valve Corporation or Steam. Community Workshop Downloader is not affiliated with other downloading softwares unless specified. The Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.* 
+</details>
+<details>
+  <summary>[Obsolete] Version: 0.3.3</summary>
+  INSERT PAGE 
+</details>
+<details>
+  <summary>[Obsolete] Version: 0.3.2</summary>
+  INSERT PAGE 
+</details>
+<details>
+  <summary>[Obsolete] Version: 0.3.1</summary>
+  INSERT PAGE 
+</details>
+<details>
+  <summary>[Obsolete] Version: 0.3.0</summary>
+  INSERT PAGE 
+</details>
+<details>
+  <summary>[Obsolete] Version: 0.2.5</summary>
+  INSERT PAGE 
+</details>
+<details>
+  <summary>[Obsolete] Version: 0.2.0</summary>
+  INSERT PAGE 
 </details>
 </details>
