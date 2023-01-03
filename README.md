@@ -747,9 +747,6 @@ Answer 2
 📝 Some other minor changes
 #### Workshop Downloader v0.3.1a
 🛠️ Fixed downloading issue with GGNetwork
-#### Workshop Downloader v0.3.2a
-🛠️ Moved "Caves of Qud" from ggetwork to CWD
-
 
 ### Authors
 #### [Snkt01](https://github.com/snkt01), [SlejmUr](https://github.com/SlejmUr), [GamingNerdLeith2022](https://github.com/GamingNerdLeith2020)
