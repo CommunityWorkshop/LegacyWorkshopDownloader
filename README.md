@@ -756,7 +756,7 @@ Answer 2
 </details>
 <details>
   <summary>[Obsolete] Version: 0.3.0a</summary>
-  ![CWD_Logo-Wide.png](https://iili.io/UwqcWG.png)
+![CWD_Logo-Wide.png](https://iili.io/UO3vNn.png)
 
 [![Discord](https://img.shields.io/discord/980492607778091058?color=%235865F2&label=Discord&logo=Discord&style=flat-square)](https://discord.com/invite/TrxaNYb2Vv)
 [![Licence](https://img.shields.io/github/license/Community-Workshop-Downloader/CommunityWorkshopMain?color=%23A42E2B&label=Licence&logo=GNU&style=flat-square)](https://www.gnu.org/licenses/gpl-3.0.en.html)
